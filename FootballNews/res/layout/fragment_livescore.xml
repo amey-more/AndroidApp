@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:shrinkColumns="*"
+            android:stretchColumns="*"
+            android:background="#000000">
+     <TableRow
+                            android:id="@+id/tableRow1"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent">
+                            <TextView
+                                android:id="@+id/teamA"
+                                android:layout_weight="1" 
+                                android:textColor="#00ff00" 
+                                android:gravity="center"/>
+                            <TextView
+                                android:id="@+id/scoreA"
+                                android:layout_weight="1" 
+                                android:textColor="#00ff00" 
+                                android:gravity="center"/>
+                            <TextView
+                                android:id="@+id/vs" 
+                                android:layout_weight="1" 
+                                android:textColor="#00ff00" 
+                                 android:gravity="center"/>
+                             <TextView
+                                android:id="@+id/scoreB"
+                                android:layout_weight="1" 
+                                android:textColor="#00ff00" 
+                                android:gravity="center"/>
+                             <TextView
+                                android:id="@+id/teamB"
+                                android:layout_weight="1" 
+                                android:textColor="#00ff00" 
+                                android:gravity="center"/>
+                             <TextView
+                                android:id="@+id/time"
+                                android:layout_weight="1" 
+                                android:textColor="#00ff00" 
+                                android:gravity="center"/>
+                        </TableRow>
+    <ListView
+        android:id="@android:id/list"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+    </ListView>
+     </TableLayout> 
+</RelativeLayout>
